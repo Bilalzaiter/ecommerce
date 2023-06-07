@@ -5,11 +5,14 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from 'react-redux'
 import Store from './redux/Store'
+import { HashRouter as Router } from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <Router>
   <Provider store={Store} >
     <App />
   </Provider>
+  </Router>
 );
