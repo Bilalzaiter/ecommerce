@@ -3,18 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Provider } from 'react-redux'
+import {Provider} from 'react-redux'
 import Store from './redux/Store'
-import { HashRouter as Router } from "react-router-dom";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
   <Provider store={Store} >
-    <Router>
-      <App />
-    </Router>
+    <App />
   </Provider>
-
 );

@@ -1,7 +1,7 @@
 import HomePage from "./pages/Home/HomePage";
 import NavbarLogin from "./components/Utility/NavbarLogin";
 import Footer from './components/Utility/Footer'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/Auth/LoginPage";
 import RegisterPage from "./pages/Auth/RegisterPage";
 import AllCategoryPage from "./pages/Category/AllCategoryPage";
