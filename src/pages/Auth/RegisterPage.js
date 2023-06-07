@@ -1,5 +1,7 @@
 import React from 'react'
-import { Col, Container, NavLink, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+
 
 const RegisterPage = () => {
     return (
@@ -25,11 +27,11 @@ const RegisterPage = () => {
                     <button className="btn-login mx-auto mt-4">تسجيل الحساب</button>
                     <label className="mx-auto my-4">
                         لديك حساب بالفعل؟{" "}
-                        <NavLink href="/login" style={{ textDecoration: "none" }}>
+                        <Link to="/login" style={{ textDecoration: "none" }}>
                             <span style={{ cursor: "pointer" }} className="text-danger">
                                 اضغط هنا
                             </span>
-                        </NavLink>
+                        </Link>
                     </label>
                 </Col>
             </Row>

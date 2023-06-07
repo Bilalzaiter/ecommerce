@@ -1,5 +1,7 @@
 import React from 'react'
-import { Row, Col, NavLink } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+
 
 const CartCheckout = () => {
     return (
@@ -13,12 +15,12 @@ const CartCheckout = () => {
                     <button className="copon-btn d-inline ">تطبيق</button>
                 </div>
                 <div className="product-price d-inline w-100 my-3  border">34000 جنية</div>
-                <NavLink
+                <Link
                     href="/order/paymethoud"
                     style={{ textDecoration: "none" }}
                     className="product-cart-add  d-inline ">
                     <button className="product-cart-add w-100 px-2"> اتمام الشراء</button>
-                </NavLink>
+                </Link>
             </Col>
         </Row>
     )

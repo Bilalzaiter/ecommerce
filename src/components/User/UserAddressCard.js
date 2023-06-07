@@ -1,6 +1,8 @@
 import React from 'react'
-import { Row, Col, NavLink } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import deleteicon from '../../assets/images/delete.png'
+import { Link } from 'react-router-dom';
+
 const UserAddressCard = () => {
     return (
         <div className="user-address-card my-3 px-2">
@@ -18,9 +20,9 @@ const UserAddressCard = () => {
                                 height="17px"
                                 width="15px"
                             />
-                            <NavLink href="/user/edit-address" style={{ textDecoration: "none" }}>
+                            <Link to="/user/edit-address" style={{ textDecoration: "none" }}>
                                 <p className="item-delete-edit"> تعديل</p>
-                            </NavLink>
+                            </Link>
                         </div>
                         <div className="d-flex ">
                             <img

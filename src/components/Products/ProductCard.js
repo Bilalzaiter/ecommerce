@@ -1,5 +1,7 @@
 import React from 'react'
-import { Card, Col, NavLink } from 'react-bootstrap'
+import { Card, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+
 
 const ProductCard = ({ rate, img, img1 }) => {
     return (
@@ -15,9 +17,9 @@ const ProductCard = ({ rate, img, img1 }) => {
                         backgroundColor: "#FFFFFF",
                         boxShadow: "0 2px 2px 0 rgba(151,151,151,0.5)",
                     }}>
-                    <NavLink href="/products/:id" style={{ textDecoration: 'none' }}>
+                    <Link to="/products/:id" style={{ textDecoration: 'none' }}>
                         <Card.Img style={{ height: "228px", width: "100%", }} src={img1} />
-                    </NavLink>
+                    </Link>
                     <div className="d-flex justify-content-end mx-2">
                         <img
                             src={img}

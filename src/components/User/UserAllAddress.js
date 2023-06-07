@@ -1,6 +1,8 @@
 import React from 'react'
-import { Row, Col, NavLink } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import UserAddressCard from './UserAddressCard'
+import { Link } from 'react-router-dom';
+
 
 const UserAllAddress = () => {
     return (
@@ -12,9 +14,9 @@ const UserAllAddress = () => {
 
             <Row className="justify-content-center">
                 <Col sm="5" className="d-flex justify-content-center">
-                    <NavLink href="/user/add-address" style={{ textDecoration: "none" }}>
+                    <Link to="/user/add-address" style={{ textDecoration: "none" }}>
                         <button className="btn-add-address">اضافه عنوان جديد</button>
-                    </NavLink>
+                    </Link>
                 </Col>
             </Row>
         </div>

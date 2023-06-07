@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Col, Card, Row, Modal, Button, NavLink } from 'react-bootstrap'
+import { Col, Card, Row, Modal, Button} from 'react-bootstrap'
 import { useDispatch } from 'react-redux';
 import { DeleteProducts } from '../../redux/actions/ProductsAction';
+import { Link } from 'react-router-dom';
 const AdminAllProductsCard = ({ item }) => {
 
     const [show, setShow] = useState(false);
@@ -47,12 +48,12 @@ const AdminAllProductsCard = ({ item }) => {
                 <Row className="d-flex justify-content-center px-2">
                     <Col className=" d-flex justify-content-between">
                         <div onClick={handleShow} className="d-inline item-delete-edit">ازاله</div>
-                        <NavLink href={`/admin/editproduct/${item._id}`} style={{ textDecoration: "none" }}>
+                        <Link to={`/admin/editproduct/${item._id}`} style={{ textDecoration: "none" }}>
                             <div className="d-inline item-delete-edit">تعديل</div>
-                        </NavLink>
+                        </Link>
                     </Col>
                 </Row>
-                <NavLink href={`/products/${item._id}`} style={{ textDecoration: "none" }}>
+                <Link to={`/products/${item._id}`} style={{ textDecoration: "none" }}>
                     <Card.Img style={{ height: "228px", width: "100%" }} src={item.imageCover} />
                     <Card.Body>
                         <Card.Title>
@@ -70,7 +71,7 @@ const AdminAllProductsCard = ({ item }) => {
                             </div>
                         </Card.Text>
                     </Card.Body>
-                </NavLink>
+                </Link>
             </Card>
         </Col>
     )

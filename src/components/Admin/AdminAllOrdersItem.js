@@ -1,10 +1,11 @@
 import React from 'react'
-import { Col, NavLink, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import mobile from '../../assets/images/mobile.png'
+import { Link } from 'react-router-dom'
 const AdminAllOrdersItem = () => {
     return (
         <Col sm="12">
-            <NavLink
+            <Link
                 href="/admin/orders/23"
                 className="cart-item-body my-2 px-1 d-flex"
                 style={{ textDecoration: "none" }}>
@@ -49,7 +50,7 @@ const AdminAllOrdersItem = () => {
                         </Col>
                     </Row>
                 </div>
-            </NavLink>
+            </Link>
         </Col>
     )
 }

@@ -1,5 +1,7 @@
 import React from 'react'
-import { Col, Container, NavLink, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+
 
 const LoginPage = () => {
   return (
@@ -20,11 +22,11 @@ const LoginPage = () => {
           <button className="btn-login mx-auto mt-4">تسجيل الدخول</button>
           <label className="mx-auto my-4">
             ليس لديك حساب ؟{" "}
-            <NavLink href="/register" style={{ textDecoration: 'none' }}>
+            <Link to="/register" style={{ textDecoration: 'none' }}>
               <span style={{ cursor: "pointer" }} className="text-danger">
                 اضغط هنا
               </span>
-            </NavLink>
+            </Link>
           </label>
 
 
@@ -33,17 +35,17 @@ const LoginPage = () => {
 
 
         <label className="mx-auhref my-4">
-          <NavLink href="/admin/allproducts" style={{ textDecoration: 'none' }}>
+          <Link to="/admin/allproducts" style={{ textDecoration: 'none' }}>
             <span style={{ cursor: "pointer" }} className="text-danger">
               الدخول ادمن
             </span>
-          </NavLink>
+          </Link>
 
-          <NavLink href="/user/allorders" style={{ textDecoration: 'none' }}>
+          <Link to="/user/allorders" style={{ textDecoration: 'none' }}>
             <span style={{ cursor: "pointer" }} className="text-danger mx-3">
               الدخول مستخدم
             </span>
-          </NavLink>
+          </Link>
         </label>
       </Row>
     </Container>
